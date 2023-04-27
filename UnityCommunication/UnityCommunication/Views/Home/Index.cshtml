@@ -1,0 +1,12 @@
+﻿@model MessageModel
+<h1>SUPER TOOLBAR</h1>
+
+<form method="post" asp-action="Message" asp-controller="Message" asp-route-token="@ViewBag.Token">
+    <div>
+        <label asp-for="Msg"></label>
+        <input asp-for="Msg"/>
+    </div>
+    <div>
+        <input type="submit" value="Send to Unity" />
+    </div>
+</form>
